@@ -1,6 +1,6 @@
 # Automated Twitter Post Bot
 
-This project is an automated bot that generates and posts content to Twitter, using AI-generated topics and images. It uses various technologies, including Stable Diffusion for image creation, Tweepy for Twitter API interaction, and Ollama for generating tweets.
+This project is an automated bot that generates and posts content to X (Twitter), using AI-generated topics and images. It uses various technologies, including Stable Diffusion for image creation, Tweepy for Twitter API interaction, and Ollama for generating tweets.
 
 ## Features
 - **Automated Tweet Posting**: Uses Tweepy to post tweets with a configurable frequency.
