@@ -1,17 +1,17 @@
-# Automated Twitter Post Bot
+# Automated X Posting AI Agent
 
-This project is an automated bot that generates and posts content to X (Twitter), using AI-generated topics and images. It uses various technologies, including Stable Diffusion for image creation, Tweepy for Twitter API interaction, and Ollama for generating tweets.
+Automated X Posting AI Agent that generates and posts content to X, using AI-generated topics and images. It uses various technologies, including Stable Diffusion for image creation, Tweepy for Twitter API interaction, and AI for generating post content.
 
 ## Features
-- **Automated Tweet Posting**: Uses Tweepy to post tweets with a configurable frequency.
-- **AI-Generated Content**: Generates tweet topics and content using Ollama and GPT models.
-- **Image Creation**: Generates accompanying images using Stable Diffusion for selected topics.
+- **Automated Tweet Posting**: Uses Tweepy to post  with a configurable frequency.
+- **AI-Generated Content**: Generates posts topics and content using Ollama or GPT models.
+- **Image Creation**: Generates accompanying images using Stable Diffusion for selected topics (requires a CUDA compatible GPU).
 
 ## Prerequisites
 - Python 3.8 or higher.
-- Twitter Developer account for API credentials.
+- X account with Developer account enabled for API credentials.
 - CUDA-compatible GPU (optional for faster image generation).
-- Docker (for containerized deployment).
+- Docker (for containerized deployment). Optional
 - Poetry (for managing dependencies).
 
 ## Installation

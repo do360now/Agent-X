@@ -23,10 +23,10 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 XAI_API_KEY = os.getenv("XAI_API_KEY")
 
 
-logger.info("Checking if all Twitter API credentials are available...")
+logger.info("Checking if all X API credentials are available...")
 if not all([API_KEY, API_SECRET, ACCESS_TOKEN, ACCESS_SECRET]):
     raise ValueError(
-        "One or more Twitter API credentials are missing. Please check your environment variables."
+        "One or more X API credentials are missing. Please check your environment variables."
     )
 
 if not OPENAI_API_KEY:
@@ -37,27 +37,27 @@ if not OPENAI_API_KEY:
 
 def authenticate_v1():
     """
-    Authenticate with Twitter API v1.1 using OAuth 1.0a User Context and return the API object.
+    Authenticate with X API v1.1 using OAuth 1.0a User Context and return the API object.
     """
-    logger.info("Authenticating with Twitter API v1.1 using OAuth 1.0a User Context...")
+    logger.info("Authenticating with X API v1.1 using OAuth 1.0a User Context...")
     auth = tweepy.OAuth1UserHandler(API_KEY, API_SECRET, ACCESS_TOKEN, ACCESS_SECRET)
     api = tweepy.API(auth)
-    logger.info("Successfully authenticated with Twitter API v1.1.")
+    logger.info("Successfully authenticated with X API v1.1.")
     return api
 
 
 def authenticate_v2():
     """
-    Authenticate with Twitter API v2 using OAuth 1.0a User Context and return the Client object.
+    Authenticate with X API v2 using OAuth 1.0a User Context and return the Client object.
     """
-    logger.info("Authenticating with Twitter API v2 using OAuth 1.0a User Context...")
+    logger.info("Authenticating with X API v2 using OAuth 1.0a User Context...")
     client = tweepy.Client(
         consumer_key=API_KEY,
         consumer_secret=API_SECRET,
         access_token=ACCESS_TOKEN,
         access_token_secret=ACCESS_SECRET,
     )
-    logger.info("Successfully authenticated with Twitter API v2.")
+    logger.info("Successfully authenticated with X API v2.")
     return client
 
 

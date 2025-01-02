@@ -19,24 +19,7 @@ def generate_post_topic():
     topics = [
         "Benefits of Automating Social Media Posts",
         "How Content Automation Saves Time for Professionals",
-        "Maximizing Engagement with Automated Posting Schedules",
-        "Peak Hours for Social Media Engagement",
-        "ROI on Social Media Automation Tools",
-        "Consistency in Social Media Presence with Automation",
-        "How Automated Posting Helps You Focus on Core Business Activities",
-        "Best Practices for Automated Content Generation",
-        "AI Tools for Consistent Social Media Growth",
-        "Balancing Personal Touch and Automation in Social Media",
-        "Customizing Automated Posts for Your Audience",
-        "Content Calendars and Automation",
-        "Impact of Regular Posting on Brand Visibility",
-        "Using Automation to Post on Multiple Platforms",
-        "Saving Time by Automating WordPress and X Posts",
-        "Advantages of Scheduling Posts Ahead of Time",
-        "Automated Image Selection for Engaging Content",
-        "Optimizing Content Generation with AI Agents",
-        "How to Start Automating Social Media Posts",
-        "Choosing the Right Tool for Social Media Automation",
+        
     ]
     topic = random.choice(topics)
     logger.info(f"Selected random topic: {topic}")
@@ -58,24 +41,6 @@ def generate_tweet(topic):
     prompts = {
         "Latest VR Headset Releases": "Create a post about the latest VR headset releases and include this link https://amzn.to/3Ahx4i9 focusing on new features, under 250 characters. Use hashtags like #VRHeadsets #TechTrends.",
         "AR in Healthcare": "Generate a tweet about how AR is transforming healthcare, under 250 characters. Include hashtags like #ARHealthcare #TechForGood.",
-        "VR Training Programs": "Create a post on the use of VR in training programs for various industries, under 250 characters. Use hashtags like #VRTraining #FutureOfWork.",
-        "Augmented Reality in Retail": "Write a post about how AR is being used to enhance the retail experience, include this link https://amzn.to/3Ahx4i9, under 250 characters. Use hashtags like #ARRetail #ShoppingTech.",
-        "VR & AR in Education": "Describe how VR and AR are transforming the educational experience, under 250 characters. Include hashtags like #EdTech #FutureOfLearning.",
-        "Future of the Metaverse": "Share a tweet on the potential future of the metaverse and its impact, under 250 characters. Include hashtags like #Metaverse #VirtualWorlds.",
-        "Immersive VR Gaming": "Generate a tweet on the latest immersive VR gaming experiences, under 250 characters. Use hashtags like #VRGaming #Immersion.",
-        "AR-Powered Navigation": "Describe how AR is revolutionizing navigation, with digital overlays and real-time directions. Include hashtags like #ARNavigation #TechInnovation.",
-        "Using VR for Mental Health": "Create a tweet on the benefits of VR for mental health therapy, providing immersive relaxation and healing experiences. Include hashtags like #VRTherapy #MentalHealth.",
-        "Innovations in Mixed Reality": "Share insights on recent innovations in mixed reality, merging the real and virtual worlds. Include hashtags like #MixedReality #Innovation.",
-        "AR in Interior Design": "Talk about how AR is changing interior design, allowing users to visualize furniture and decor in real-time. Use hashtags like #ARInterior #HomeDesign.",
-        "VR for Remote Work": "Describe how VR is enabling remote work collaboration with virtual workspaces, include this link https://amzn.to/3Ahx4i9, under 250 characters. Use hashtags like #RemoteWork #VRSpaces.",
-        "Extended Reality Trends": "Provide a quick overview of the latest trends in Extended Reality (XR), combining AR, VR, and MR. Include hashtags like #XRTrends #FutureOfTech.",
-        "Interactive AR Experiences": "Create a post on interactive AR experiences for entertainment and learning, under 250 characters. Use hashtags like #InteractiveAR #Tech.",
-        "VR Hardware Comparisons": "Generate a tweet comparing different VR hardware options, focusing on features and performance. Use hashtags like #VRHardware #TechComparison.",
-        "Real-World AR Use Cases": "Describe real-world applications of AR, such as navigation, retail, and healthcare, under 250 characters. Use hashtags like #ARApplications #FutureTech.",
-        "Impact of VR in Therapy": "Generate a tweet on how VR is being used in therapy, from exposure therapy to virtual relaxation environments. Use hashtags like #VRTherapy #HealthTech.",
-        "Metaverse Development Updates": "Share recent developments in the metaverse, including platform updates and new features, under 250 characters. Use hashtags like #MetaverseUpdates #VirtualWorld.",
-        "Tips for VR Beginners": "Provide helpful tips for VR beginners, such as setup advice and must-try experiences. Use hashtags like #VRTips #GettingStarted. Include this link https://amzn.to/3Ahx4i9.",
-        "How to Get Started with AR": "Offer guidance for beginners interested in AR, including app suggestions and basic setup tips. Use hashtags like #ARBasics #GettingStarted.",
         "VenezArt": "Generate a tweet on different variations of this introduction, Explore the boundless creativity of VenezArt Multimedia Corp. From animations to immersive gaming, graphic design, and custom apparel, we bring your vision to life. Include @venezart and keep it under 250 characters.",
     }
 
