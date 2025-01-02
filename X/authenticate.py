@@ -39,6 +39,12 @@ def authenticate_v1():
     """
     Authenticate with X API v1.1 using OAuth 1.0a User Context and return the API object.
     """
+    
+    logger.info("Checking if all X API credentials are available...")
+    if not all([API_KEY, API_SECRET, ACCESS_TOKEN, ACCESS_SECRET]):
+        raise ValueError(
+            "One or more X API credentials are missing. Please check your environment variables."
+    )
     logger.info("Authenticating with X API v1.1 using OAuth 1.0a User Context...")
     auth = tweepy.OAuth1UserHandler(API_KEY, API_SECRET, ACCESS_TOKEN, ACCESS_SECRET)
     api = tweepy.API(auth)
