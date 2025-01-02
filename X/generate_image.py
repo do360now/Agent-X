@@ -43,8 +43,8 @@ def generate_image(topic):
         logger.error(f"Error loading model: {e}")
         return None
 
-    num_inference_steps = 3
-    guidance_scale = 7.5
+    num_inference_steps = 30
+    guidance_scale = 6
 
     # Updated prompts for each topic
     prompts = {

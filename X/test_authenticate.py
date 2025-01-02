@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch, MagicMock
 import os
-from authenticate import authenticate_v1, authenticate_v2, open_ai_auth, grok_ai_auth
+from authenticate import authenticate_v1, authenticate_v2, open_ai_auth
 
 class TestAuthenticate(unittest.TestCase):
 
@@ -50,20 +50,7 @@ class TestAuthenticate(unittest.TestCase):
 
         mock_openai.assert_called_once_with(api_key=os.getenv("OPENAI_API_KEY"))
         self.assertEqual(ai_client, mock_openai_instance)
-
-    @patch("authenticate.OpenAI")
-    def test_grok_ai_auth(self, mock_xai):
-        """Test grok_ai_auth successfully authenticates with X.AI API."""
-        mock_xai_instance = MagicMock()
-        mock_xai.return_value = mock_xai_instance
-
-        xai_client = grok_ai_auth()
-
-        mock_xai.assert_called_once_with(
-            api_key=os.getenv("XAI_API_KEY"),
-            base_url="https://api.x.ai/v1",
-        )
-        self.assertEqual(xai_client, mock_xai_instance)
+    
 
     @patch("authenticate.API_KEY", None)
     @patch("authenticate.API_SECRET", None)

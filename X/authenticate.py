@@ -77,17 +77,3 @@ def open_ai_auth():
     logger.info("Successfully authenticated with OpenAI API.")
     return ai_client
 
-
-def grok_ai_auth():
-    """
-    Authenticate with X.AI API using the provided API key.
-    """
-    logger.info("Authenticating with X.AI API...")
-    
-    client = OpenAI(
-        api_key=XAI_API_KEY,
-        base_url="https://api.x.ai/v1",
-    )
-    logger.info("Successfully authenticated with X.AI API.")
-
-    return client
