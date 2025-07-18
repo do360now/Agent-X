@@ -34,3 +34,25 @@ This project is a Python script that automates posting tweets on X (formerly Twi
 Then install:
 - `pip install -r requirements.txt`
 -  Note: The `ollama` package might refer to the Python client for Ollama. If not installed via pip, ensure you have the Ollama API running.
+
+4. Install and Set Up Ollama
+* Download and install Ollama from the official website: ollama.ai.
+* Pull the gemma3:4b model:
+- `ollama pull gemma3:4b`
+* Start the Ollama server
+- `ollama serve`
+- Keep the server running in a separate terminal while executing the script.
+
+5. Set Up Environment Variables
+- Create a .env file in the project root with your X API credentials:
+- `API_KEY=your_api_key`
+- `API_SECRET=your_api_secret`
+- `ACCESS_TOKEN=your_access_token`
+- `ACCESS_SECRET=your_access_secret`
+- Replace the placeholders with your actual credentials from the X Developer Portal.
+
+# License
+- MIT License. See LICENSE for details.
+
+# Contributing
+- Feel free to open issues or pull requests for improvements!
