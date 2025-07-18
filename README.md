@@ -1,3 +1,4 @@
+![Alt text](logo.png)
 # Automated X (Twitter) Poster with AI-Generated Content
 This project is a Python script that automates posting tweets on X (formerly Twitter) at random intervals. It generates topics either from static lists or by scraping trending topics from trends24.in, creates engaging post content using a locally running Ollama model (gemma3:4b), and posts them using the Tweepy library. Images can optionally be attached if found in the images/ folder.
 
