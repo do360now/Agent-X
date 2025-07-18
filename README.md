@@ -24,7 +24,7 @@ This project is a Python script that automates posting tweets on X (formerly Twi
 - `source .venv/bin/activate  # On Windows: .venv\Scripts\activate`
 
 3. Install Python Dependencies
-## Create a `requirements.txt` file with the following content:
+- Create a `requirements.txt` file with the following content:
 - `tweepy==4.14.0  # Or latest version`
 - `python-dotenv==1.0.0`
 - `ollama==0.1.0  # Adjust based on actual package; if using ollama-python library`
@@ -33,4 +33,4 @@ This project is a Python script that automates posting tweets on X (formerly Twi
 
 Then install:
 - `pip install -r requirements.txt`
-### Note: The `ollama` package might refer to the Python client for Ollama. If not installed via pip, ensure you have the Ollama API running.
+-  Note: The `ollama` package might refer to the Python client for Ollama. If not installed via pip, ensure you have the Ollama API running.
