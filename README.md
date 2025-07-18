@@ -16,21 +16,21 @@ This project is a Python script that automates posting tweets on X (formerly Twi
 
 # Installation
 1. Clone the Repository
-`git clone https://github.com/yourusername/your-repo-name.git`
-`cd your-repo-name`
+- `git clone https://github.com/yourusername/your-repo-name.git`
+- `cd your-repo-name`
 
 2. Set Up a Virtual Environment (recommended)
-`python -m venv .venv`
-`source .venv/bin/activate  # On Windows: .venv\Scripts\activate`
+- `python -m venv .venv`
+- `source .venv/bin/activate  # On Windows: .venv\Scripts\activate`
 
 3. Install Python Dependencies
-Create a `requirements.txt` file with the following content:
-`tweepy==4.14.0  # Or latest version`
-`python-dotenv==1.0.0`
-`ollama==0.1.0  # Adjust based on actual package; if using ollama-python library`
-`requests==2.31.0`
-`beautifulsoup4==4.12.2`
+## Create a `requirements.txt` file with the following content:
+- `tweepy==4.14.0  # Or latest version`
+- `python-dotenv==1.0.0`
+- `ollama==0.1.0  # Adjust based on actual package; if using ollama-python library`
+- `requests==2.31.0`
+- `beautifulsoup4==4.12.2`
 
 Then install:
-`pip install -r requirements.txt`
-Note: The `ollama` package might refer to the Python client for Ollama. If not installed via pip, ensure you have the Ollama API running.
+- `pip install -r requirements.txt`
+### Note: The `ollama` package might refer to the Python client for Ollama. If not installed via pip, ensure you have the Ollama API running.
